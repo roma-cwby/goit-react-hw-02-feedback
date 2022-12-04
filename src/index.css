@@ -1,4 +1,9 @@
-@import-normalize; /* bring in normalize.css styles */
+@import "modern-normalize";
+
+*{
+  margin: 0;
+  padding: 0;
+}
 
 body {
   margin: 0;
@@ -7,9 +12,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: silver;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul{
+  list-style: none;
+}
+
+#root {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
 }
